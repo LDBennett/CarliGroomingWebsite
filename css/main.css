@@ -1,0 +1,192 @@
+/*
+Main CSS file for Carli.website (Carli's Grooming website)
+*/
+/* 
+    Created on : Dec 5, 2016, 3:39:48 PM
+    Author     : Lee Bennett (LDBennett.com)
+*/
+
+/*Basic CSS for background, fonts, etc.*/
+body{
+  background: #ff81ca;
+}
+section{
+  margin: 5em 0 5em 0;
+}
+#header{
+  background: #ff81ca;
+}
+#header .img-responsive{
+  margin-top: 10em;
+  margin-bottom: 5em;
+}
+#main{
+  font-family: 'Montserrat', sans-serif;
+  background: #ff81ca;
+  min-height: 100vh;
+}
+@media (min-width: 768px) {
+  #main{
+    background: #ff81ca url("../img/background_mob.png") no-repeat bottom right;
+    min-height: 100vh;
+  }
+}
+h1,h2,h3,h4,h5{
+  font-family: 'Reem Kufi', sans-serif;
+}
+h1{
+  font-size: 5em;
+}
+
+/* FULL SCREEN MODAL STYLES
+-------------------------------------------------- */
+.fullscreen .modal-dialog {
+   margin: 0 0 0 0;
+   width: 100%;
+   height: 100%;
+   min-height: 100%;
+   padding: 0;
+   color: #333;
+}
+
+.fullscreen .modal-content {
+   height: 100%;
+   min-height: 100%;
+   border-radius: 0;
+   color: white;
+   background: rgba(80,129,175,.5);
+   overflow:auto;
+}
+
+.fullscreen .modal-body ul {
+   padding: 100px 0 0 0;
+}
+
+.fullscreen .modal-body li {
+   padding: 10px 0 10px 0 ;
+}
+
+.fullscreen .modal-body a {
+  color: white;
+  font-size: 3em;
+  text-transform: uppercase;
+  font-family: 'Reem Kufi', sans-serif;
+}
+.fullscreen .modal-body a:hover,
+.fullscreen .modal-body a:active,
+.fullscreen .modal-body a:visited{
+  color: white;
+  text-shadow: 2px 2px black;
+  text-decoration: none;
+}
+
+/* Custom Buttons for nav and top*/
+.btn-transparent{
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+.btn-transparent:hover{
+  -webkit-animation: rubberBand 1s;
+  -moz-animation: rubberBand 1s;
+  -o-animation: rubberBand 1s;
+  animation: rubberBand 1s;
+  color: white;
+}
+
+.btn-transparent-r{
+  background-color: transparent;
+  position: fixed;
+  bottom: 15em;
+  right:2em;
+  z-index: 999;
+}
+.btn-transparent-r:hover{
+  -webkit-animation: jello 1s;
+  -moz-animation: jello 1s;
+  -o-animation: jello 1s;
+  animation: jello 1s;
+  color: white;
+}
+
+.btn-pink{
+    background: #ff81ca;
+    color: white;
+}
+ 
+.btn-pink:hover, .btn-pink:focus, .btn-pink:active, .btn-pink.active, .open > .dropdown-toggle.btn-pink {
+  background: #FFB3E0;
+}
+.btn-pink.raised {
+  box-shadow: 0 3px 0 0 #FD28A5;
+}
+.btn-pink.raised:active {
+	background: #33a6cc;
+	box-shadow: none;
+	margin-bottom: -3px;
+	margin-top: 3px;
+}
+
+.btn-blue{
+    background: #5081af;
+    color: white;
+}
+ 
+.btn-blue:hover, .btn-blue:focus, .btn-blue:active, .btn-blue.active, .open > .dropdown-toggle.btn-blue {
+  background: #a7c9d7;
+}
+.btn-blue.raised {
+  box-shadow: 0 3px 0 0 #2F6498;
+}
+.btn-blue.raised:active {
+	background: #33a6cc;
+	box-shadow: none;
+	margin-bottom: -3px;
+	margin-top: 3px;
+}
+
+/*Limit picture size*/
+.profile-picture{
+  max-width: 300px;
+}
+
+/*Custom panel colors*/
+.panel{
+  background: #007299;
+  border: none;
+  border-radius:2em;
+}
+.panel:hover{
+  -webkit-animation: bounce 1s;
+  -moz-animation: bounce 1s;
+  -o-animation: bounce 1s;
+  animation: bounce 1s;
+}
+
+.img-round-custom{
+  border-radius:1em;
+}
+
+/*Panel footer custom CSS colors and avoiding variable white space*/
+.panel-footer{
+  background:#a7c9d7;
+  color: #007299;
+  border: none;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border-radius:2em;
+}
+
+footer{
+  background:#5081af;
+  color: white;
+  padding: 5em 0 2em 0;
+}
+
+input[type=text] {
+    background-color: #a7c9d7;
+    color: black;
+    border: none;
+}
